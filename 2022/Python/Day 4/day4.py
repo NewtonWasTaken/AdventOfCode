@@ -9,8 +9,6 @@ for x in range(len(text)):
                 second_set = set(list(range(int(text[x][y-1]), int(text[x][y]) + 1)))
                 if first_set.issubset(second_set) or second_set.issubset(first_set):
                     result += 1
-        first_set = set()
-        second_set = set()
 print(result)
 result2 = 0
 for x in range(len(text)):
@@ -21,6 +19,4 @@ for x in range(len(text)):
                 second_set = set(list(range(int(text[x][y-1]), int(text[x][y]) + 1)))
                 if len(first_set.intersection(second_set)) != 0:
                     result2 += 1
-        first_set = set()
-        second_set = set()
 print(result2)

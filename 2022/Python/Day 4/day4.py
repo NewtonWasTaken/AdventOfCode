@@ -10,7 +10,6 @@ for x in range(len(text2)):
                 second_set = set(list(range(int(text2[x][y-1]), int(text2[x][y]) + 1)))
                 if first_set.issubset(second_set) or second_set.issubset(first_set):
                     result += 1
-    if (x + 1) % 2 == 0:
         first_set = set()
         second_set = set()
 print(result)

@@ -1,4 +1,5 @@
-text = [y.split("-") for x in [i.split(",") for i in open("input.txt").read().splitlines()] for y in x]
+input = open("input.txt")
+text = [y.split("-") for x in [i.split(",") for i in input.read().splitlines()] for y in x]
 result = 0
 result2 = 0
 for x in range(len(text)):

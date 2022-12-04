@@ -19,7 +19,7 @@ for x in range(len(text)):
             if y == 1:
                 first_set = set(list(range(int(text[x-1][y-1]), int(text[x-1][y]) + 1)))
                 second_set = set(list(range(int(text[x][y-1]), int(text[x][y]) + 1)))
-                if len(first_set.intersection(second_set)) != 0 or len(second_set.intersection(first_set)) != 0:
+                if len(first_set.intersection(second_set)) != 0:
                     result2 += 1
         first_set = set()
         second_set = set()

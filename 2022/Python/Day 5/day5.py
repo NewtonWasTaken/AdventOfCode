@@ -31,5 +31,3 @@ for x in range(len(instructions)):
 
 for x in table:
     print(x[0], end ="")
-
-
